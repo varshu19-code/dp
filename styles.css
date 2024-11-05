@@ -1,0 +1,93 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #333333); /* Gradient background from black to dark grey */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f5f5f5; /* Light text color */
+}
+
+/* Main Container Styling */
+.container {
+    background-color: #2a2a2a; /* Slightly lighter dark background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure child elements are contained within the border radius */
+    max-width: 600px; /* Maximum width of the container */
+    width: 90%; /* Responsive width */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Internal padding */
+}
+
+/* Header Styling */
+header h1 {
+    color: #f5f5f5; /* Light text color */
+    font-size: 2.5em; /* Large font size */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Gradient Text Styling */
+.gradient-text {
+    background: linear-gradient(45deg, #2ecc71, #8e44ad); /* Gradient background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+/* Main Content Paragraph Styling */
+main p {
+    font-size: 1.2em; /* Slightly larger text */
+    color: #cccccc; /* Light grey text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+/* Button Container Styling */
+.buttons {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Space between buttons */
+}
+
+/* Individual Button Styling */
+.button {
+    display: inline-block; /* Inline-block element */
+    padding: 15px 25px; /* Padding inside the buttons */
+    font-size: 1em; /* Standard text size */
+    color: #ffffff; /* White text color */
+    background: linear-gradient(45deg, #2ecc71, #8e44ad); /* Gradient background with green and purple */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background: linear-gradient(45deg, #27ae60, #7d3c98); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px; /* Space above the footer */
+    font-size: 0.9em; /* Smaller text size */
+    color: #a0a0a0; /* Grey text color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduce padding on small screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Reduce header size on small screens */
+    }
+
+    .button {
+        padding: 12px 20px; /* Reduce button padding on small screens */
+    }
+}
